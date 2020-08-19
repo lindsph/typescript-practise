@@ -1,13 +1,16 @@
-import { ComponentBase } from './base-component.js';
-import { Validatable, validate } from '../util/validation.js';
-import { autobind } from '../decorators/autobind.js';
-import { projectState } from '../state/project-state.js';
+import { ComponentBase } from './base-component';
+import { Validatable, validate } from '../util/validation';
+import { autobind } from '../decorators/autobind';
+import { projectState } from '../state/project-state';
 
 // to group imports
 // import * as <any alias> from '../util/validation.js';
 
 // to rename import (to avoid name clashes?)
 // import { autobind as Autobind } from '../decorators/autobind.js';
+
+// if something is exported as default (can only be one default export per file, and can also have named exports as well), import as:
+// import <can give any name to reference the default export of the file> from './location';
 
 // ProjectInput Class
 export class ProjectInput extends ComponentBase<HTMLDivElement, HTMLFormElement> {

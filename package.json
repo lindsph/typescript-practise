@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "lite-server"
+    "start": "webpack-dev-server",
+    "build": "webpack"
   },
   "keywords": [
     "typescript"
@@ -13,6 +14,11 @@
   "author": "Lindsay Power-Harding",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.5.4"
+    "lite-server": "^2.5.4",
+    "ts-loader": "^8.0.2",
+    "typescript": "^3.9.7",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   }
 }
