@@ -25,6 +25,6 @@ added "build": line <br />
 
 add webpack.config.js: <br />
 
-`npm run build`
+`npm start`
 
 
